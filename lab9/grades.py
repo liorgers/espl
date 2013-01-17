@@ -1,21 +1,17 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 
 import sys
 
-input = open("grades.csv")
-
-sum = 0
-counter = 0
-
-for line in input:
-  line = line.strip()
-  splittedLine = line.split(',')
- # print splittedLine[2]
- # if counter != 0:
-  try:
-    sum = sum + float(splittedLine[2])
-    print sum
+#for arg in reversed(sys.argv):
  
-  except: pass
-  counter = counter + 1
-print sum/counter
+input = file("grades.csv")
+count = 0
+counter = 0
+for line in input:
+   line = line.strip()
+   myvec = line.split(',')
+   try:
+    count = count + float(myvec[2])
+    counter+=1
+   except: pass 
+print count/counter
