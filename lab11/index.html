@@ -1,0 +1,42 @@
+<html>
+	<head>
+  		<title>TitleBar</title>
+	<link rel="stylesheet" type="text/css" href="hi.css" />
+	<script>
+          function validateUser(event)
+	  {
+	
+	    if (event.keyCode >=47 && event.keyCode <=58)
+	      {
+		alert("illigal");
+		
+	      }
+	   }
+	  function validatePass()
+	  {
+	    var x=document.forms["myForm"]["pass"].value;
+	    if (x.length<4 || (x.charCodeAt(0)<=58 && x.charCodeAt(0)>=47))
+	      {
+		alert("illigal pass");
+		
+	      }
+	   }
+      
+	</script>
+	</head>
+	<body bgcolor="brown">
+		<div class=right_side>
+		<form name="myForm" action="demo_form.asp" onsubmit="return validatePass()" method="post">
+		Username:<input type="text" name="name" onkeyup= "return validateUser(event)"/>
+		Password:<input type="password" name="pass" />
+		<input type="submit" />
+		</form>
+		<img src="sunlight.jpg" alt="Pulpit rock" width="304" height="228">
+		</div>
+		<a href = "http:/google.com">
+ 		link.</a>
+		<font face="Arial">
+		LIOR</font>
+	</body>
+</html>
+

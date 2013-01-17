@@ -1,0 +1,1786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- Source is http://www.mind-projects.it/blog/jqzoom_v10 -->
+<head profile="http://gmpg.org/xfn/1">
+	<title>jqzoom |</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress 2.3.1" /> <!-- leave this for stats please -->
+	<style type="text/css" media="screen">
+		@import url( jqzoom_v10_files/style.css );
+	</style>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.mind-projects.it/blog/feed" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.mind-projects.it/blog/feed/rss" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.mind-projects.it/blog/feed/atom" />
+
+	<link rel="pingback" href="http://www.mind-projects.it/blog/xmlrpc.php" />
+      
+	<script type="text/javascript" src="jqzoom_v10_files/jquery.js"></script>
+	<script type="text/javascript" src="jqzoom_v10_files/jquery.jqzoom.js"></script>
+	<script type="text/javascript">
+	jQuery.noConflict();
+	jQuery(document).ready(function(){
+	jQuery(".jqzoom").jqueryzoom({
+
+        xzoom: 300, 
+        yzoom:300
+
+        });
+	});
+	</script>
+
+       <script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+	</script>
+	<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-3217107-1");
+	pageTracker._initData();
+	pageTracker._trackPageview();
+	</script>   
+      
+
+	<link rel="stylesheet" href="jqzoom_v10_files/jqzoom.css" type="text/css" media="screen" />
+      
+	 
+
+	<link rel='archives' title='March 2008' href='http://www.mind-projects.it/blog/archives/date/2008/03' />
+	<link rel='archives' title='February 2008' href='http://www.mind-projects.it/blog/archives/date/2008/02' />
+	<link rel='archives' title='December 2007' href='http://www.mind-projects.it/blog/archives/date/2007/12' />
+			<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mind-projects.it/blog/xmlrpc.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.mind-projects.it/blog/wp-includes/wlwmanifest.xml" /> 
+<!-- all in one seo pack 1.4.3.6 [-1,-1,] -->
+<meta name="description" content="jqzoom is an handy script to magnify your galleries.Based on jQuery." />
+<meta name="keywords" content="jqzoom jquery" />
+<script type="text/javascript"> lb_path = "http://www.mind-projects.it/blog/wp-content/plugins/lightbox/"; </script>
+<link rel="stylesheet" href="jqzoom_v10_files/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="jqzoom_v10_files/prototype.js"></script>
+<script type="text/javascript" src="jqzoom_v10_files/scriptaculous.js"></script>
+<script type="text/javascript" src="jqzoom_v10_files/lightbox.js"></script>
+<script language="JavaScript" type="text/javascript" src="jqzoom_v10_files/description_selection.js"></script><link rel="stylesheet" type="text/css" media="screen" href="jqzoom_v10_files/sociable.css" /><style type="text/css">
+#logo
+{
+	background-image: url(jqzoom_v10_files/img02.jpg);	
+}
+#header * 
+{
+	color:#fff;
+}
+</style>
+</head>
+
+<body>
+<div id="menu">
+	<ul>
+		<li ><a href="http://www.mind-projects.it/blog" title="Home">Home Blog</a></li>
+	     <li class="page_item page-item-6"><a href="http://www.mind-projects.it/blog/contact-me" title="Contact me">Contact me</a></li>
+<li class="page_item page-item-20"><a href="http://www.mind-projects.it/blog/gallery" title="My Photos">My Photos</a></li>
+<li class="page_item page-item-14 current_page_item "><a href="http://www.mind-projects.it/blog/jqzoom_v10" title="jQZoom_v2.2(updated)">jQZoom_v2.2(updated)</a></li>
+<li><a href="http://www.mind-projects.it" style="background-color:black;color:#FFF;">Back to Site</a></li>
+	</ul>
+</div>
+<div id="logo">
+	<h1><a href="http://www.mind-projects.it/blog" title=""></a></h1>
+	<h2></h2>
+</div>
+<div id="page">
+	
+	<div id="content">
+    									<div class="post">
+						<h2><a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="bookmark" title="Permanent Link to jQZoom_v2.2(updated)">jQZoom_v2.2(updated)</a></h2>
+            <p class="meta">
+              Posted by <a href="http://www.mind-projects.it/blog/archives/author/admin/" title="Posts by admin">admin</a> on Dec 14 2007 | 
+				<a href="http://www.mind-projects.it/blog/archives/category/uncategorized" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a>             </p>
+            <div class="story">
+              <h2 style="color: red">jQZoom</h2>
+<p>allows you to realize a small magnifier window close to the image or images on your web page easily.<br />
+I decided to build this jQuery plugin to embed detailed big images in my B2B.So now in few steps you can have your <strong>jQZoom</strong> 				in your website,eCommerce or whatever you want.<span style="border-bottom: 1px solid #333333; float: left; color: #666666; width: 100%; text-align: right">Author:Ing. <strong><a href="http://www.mind-projects.it/blog/?page_id=6">Renzi Marco</a></strong> ,December 2007</span></p>
+<p style="width: 100%"> <span><strong>Demo1</strong>(multiple images)</span></p>
+<p><span style="float: left; width: 100%; display: block"><br />
+<span class="jqzoom" style="clear: both"><img src="jqzoom_v10_files/triumph_small.jpg" alt="shoe" jqimg="jqzoom_v10_files/triumph.jpg" /></span><br />
+</span><br />
+<span style="float: left; width: 100%; display: block"><br />
+<span class="jqzoom" style="clear: both"><img src="jqzoom_v10_files/TheOc_small.jpg" alt="shoe" jqimg="jqzoom_v10_files/TheOc_big.jpg" /></span><br />
+</span></p>
+<p style="width: 100%">   <strong>Demo2</strong>(single image)<strong> </strong></p>
+<p><span style="float: left; width: 100%; display: block"><br />
+<span class="jqzoom" style="clear: both"><img src="jqzoom_v10_files/shoe1_small.jpg" alt="shoe" jqimg="jqzoom_v10_files/shoe1_big.jpg" /><br />
+</span><br />
+</span><br />
+<span style="float: left; width: 100%; display: block"><br />
+<span class="jqzoom"></span><br />
+</span></p>
+<p><strong>INSTRUCTIONS</strong>1)Simply include the jqzoom.css in your page.</p>
+<p style="border: 1px dotted #666666; background-color: #ffff66; color: black"> <code>link href="your_path/jqzoom.css" rel="stylesheet" type="text/css" media="screen"</code></p>
+<p>2)Include jQzoom and jQuery code</p>
+<p style="border: 1px dotted #666666; background-color: #ffff66; color: black"> <code>&lt;script src="your_path/jquery.js" type="text/javascript"&gt;&lt;/script&gt;<br />
+&lt;script src="your_path/jquery.jqzoom.js" type="text/javascript"&gt;&lt;/script&gt;</code></p>
+<p>3)Now create a container(div is better!!) for the image or images you would like to zoom and assign to it the &#8220;<strong>jqzoom</strong>&#8221; class.Specify for each image,the <strong>jqimg</strong> attribute,to wich you are going to assign the big image path.</p>
+<p style="border: 1px dotted #666666; background-color: #ffff66; color: black"> <code>&lt;p class="jqzoom"&gt;&lt;img src="images/shoe4_small.jpg" alt="shoe" jqimg="images/shoe4_big.jpg" /&gt;&lt;/p&gt;</code></p>
+<p>4)Load the plugin at window load</p>
+<p style="border: 1px dotted #666666; background-color: #ffff66; color: black"> <code>$(document).ready(function(){<br />
+$(".jqzoom").jqueryzoom();<br />
+});</code></p>
+<p>You can also specify some <strong>options</strong>:</p>
+<p style="border: 1px dotted #666666; background-color: #ffff66; color: black"> <code>$(document).ready(function(){<br />
+$(".jqzoom").jqueryzoom({<br />
+xzoom: 300, //zooming div default width(default width value is 200)<br />
+yzoom: 300, //zooming div default width(default height value is 200)<br />
+offset: 40, //zooming div default offset(default offset value is 10)<br />
+position: "right", //zooming div position(default position value is "right")<br />
+preload:1 // by default preload of big images is 1<br />
+lens:1 // by default the lens is 1<br />
+});<br />
+});</code></p>
+<p>5)Sit and wait for people to tell you that what you have done is really cool!!!!:-)<br />
+<fieldset style="border: 2px dotted red; float: left; width: 100%; background-color: #ffffff"><br />
+This costed to me a little job and struggles,so if you want future support for <strong>jqzoom,donate</strong> something with <strong>Paypal<strong>,before downloading it.</strong></strong><span id="float:left;width:170px;"> </span><strong><strong><br />
+</strong></strong> </fieldset><strong><strong><strong><br />
+<strong><a href="http://www.mind-projects.it/blog/wp-admin/jqzoom_v0.1"><br />
+</a></strong></strong></strong></strong></p>
+<h2 style="color: red"><strong><strong><strong><strong><a href="http://www.mind-projects.it/blog/wp-content/jqzoom_v2.2.rar" style="color: red">Download</a></strong></strong></strong></strong></h2>
+<p><strong><strong><strong>Se non capite bene l&#8217;inglese e vi servono spiegazioni chiedete pure.<br />
+Marco</strong></strong></strong></p>
+<p><strong><strong><strong><strong>Version tracker</strong>:</strong></strong></strong><br />
+<strong>29-03-2008</strong></p>
+<p><strong><strong><strong><strong>jQZoom_v2.2</strong> released:Fixed problems with RELATIVES positioned containers.<br />
+</strong></strong></strong><br />
+<strong>26-03-2008</strong></p>
+<p><strong><strong><strong><strong>jQZoom_v2.1</strong> released:Improved performance and zoom<br />
+</strong></strong></strong></p>
+<p><strong><strong><strong>22-03-2008</strong></strong></strong></p>
+<p><strong><strong><strong><strong>jQZoom_v2.0</strong> released:</strong></strong></strong></p>
+<p><strong><strong><strong>Features: </strong></strong></strong></p>
+<p><strong><strong><strong>1)Seo Improved</strong></strong></strong></p>
+<p><strong>     2)Zooming lens over the images</strong></p>
+<p><strong>                   3)Preload of big Images</strong><br />
+<strong><strong><strong>09-02-2008</strong></strong></strong></p>
+<p><strong><strong><strong><strong>jQZoom_v1.2</strong> released:fixed IE peoblem with the ALT attribute,showing the image path.</strong></strong></strong></p>
+<p><strong><strong><strong>17-12-2007</strong></strong></strong></p>
+<p><strong><strong><strong><strong>jQZoom_v1.1</strong> released:fixed Opera Bug(it wasn&#8217;t sliding properly).</strong></strong></strong></p>
+<p><strong><strong><strong>14-12-2007</strong></strong></strong></p>
+<p><strong><strong><strong><strong>jQZoom_v1.0</strong> released</strong></strong></strong></p>
+
+<div class="sociable">
+<span class="sociable_tagline">
+<strong>Share and Enjoy:</strong>
+	<span>These icons link to social bookmarking sites where readers can share and discover new web pages.</span>
+</span>
+<ul>
+	<li><a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="Digg" onfocus="sociable_description_link(this, 'bodytext')"><img src="jqzoom_v10_files/digg.png" title="Digg" alt="Digg" class="sociable-hovers" /></a></li>
+	<li><a href="http://del.icio.us/post?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="del.icio.us"><img src="jqzoom_v10_files/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a></li>
+	<li><a href="http://www.netvouz.com/action/submitBookmark?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29&amp;popup=no" title="Netvouz"><img src="jqzoom_v10_files/netvouz.png" title="Netvouz" alt="Netvouz" class="sociable-hovers" /></a></li>
+	<li><a href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="DZone" onfocus="sociable_description_link(this, 'description')"><img src="jqzoom_v10_files/dzone.png" title="DZone" alt="DZone" class="sociable-hovers" /></a></li>
+	<li><a href="http://www.thisnext.com/pick/new/submit/sociable/?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;name=jQZoom_v2.2%28updated%29" title="ThisNext"><img src="jqzoom_v10_files/thisnext.png" title="ThisNext" alt="ThisNext" class="sociable-hovers" /></a></li>
+	<li><a href="http://www.mister-wong.com/addurl/?bm_url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;bm_description=jQZoom_v2.2%28updated%29&amp;plugin=soc" title="MisterWong"><img src="jqzoom_v10_files/misterwong.gif" title="MisterWong" alt="MisterWong" class="sociable-hovers" /></a></li>
+	<li><a href="http://blogmarks.net/my/new.php?mini=1&amp;simple=1&amp;url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="blogmarks"><img src="jqzoom_v10_files/blogmarks.png" title="blogmarks" alt="blogmarks" class="sociable-hovers" /></a></li>
+	<li><a href="http://technorati.com/faves?add=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10" title="Technorati"><img src="jqzoom_v10_files/technorati.png" title="Technorati" alt="Technorati" class="sociable-hovers" /></a></li>
+	<li><a href="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;Title=jQZoom_v2.2%28updated%29" title="BlinkList" onfocus="sociable_description_link(this, 'Description')"><img src="jqzoom_v10_files/blinklist.png" title="BlinkList" alt="BlinkList" class="sociable-hovers" /></a></li>
+	<li><a href="http://reddit.com/submit?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="Reddit"><img src="jqzoom_v10_files/reddit.png" title="Reddit" alt="Reddit" class="sociable-hovers" /></a></li>
+	<li><a href="http://slashdot.org/bookmark.pl?title=jQZoom_v2.2%28updated%29&amp;url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10" title="Slashdot"><img src="jqzoom_v10_files/slashdot.png" title="Slashdot" alt="Slashdot" class="sociable-hovers" /></a></li>
+	<li><a href="http://smarking.com/editbookmark/?url=http%3A%2F%2Fwww.mind-projects.it%2Fblog%2Fjqzoom_v10&amp;title=jQZoom_v2.2%28updated%29" title="Smarking"><img src="jqzoom_v10_files/smarking.png" title="Smarking" alt="Smarking" class="sociable-hovers" /></a></li>
+</ul>
+</div>
+            </div>
+             <p class="meta">
+              130 comments for now
+						</p>
+            
+<!-- You can start editing here. -->
+
+	<h3 id="comments">130 Responses to &#8220;jQZoom_v2.2(updated)&#8221;</h3> 
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-6">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-6" title="">#</a> </small><cite><a href='http://heppie.nl/' rel='external nofollow'>Edwin Siebel</a></cite></div>
+						<p>Too bad this those not work properly in Opera (9.24).<br />
+It zooms, but it will only zoom horizontally, not vertically.</p>
+<p>Nice idea though.</p>
+	
+			<p class="cmttime">17 Dec 2007 at 9:15 am</p>		
+		</li>
+
+	
+	
+		<li class=" authorcomment" id="comment-7">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-7" title="">#</a> </small><cite>admin</cite></div>
+						<p>I&#8217;m going to check it immediatly and i&#8217;ll try to fix it!<br />
+Thanks a lot Edwin.</p>
+<p>Ing. Marco Renzi</p>
+	
+			<p class="cmttime">17 Dec 2007 at 9:29 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-8" title="">#</a> </small><cite><a href='http://eff-bee-eye.de' rel='external nofollow'>Alex93053</a></cite></div>
+						<p>This is an easy to use script and will come in handy for a gallery. <img src='jqzoom_v10_files/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+	
+			<p class="cmttime">17 Dec 2007 at 10:43 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-9">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-9" title="">#</a> </small><cite><a href='http://www.thetopiaproject.com' rel='external nofollow'>Zeno</a></cite></div>
+						<p>Very handy script, especially as the trend of the increase of camera resolution, it is a waste for people to upload resized / cropped photos because of the browser screen size limitation.</p>
+	
+			<p class="cmttime">17 Dec 2007 at 11:56 am</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-11">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-11" title="">#</a> </small><cite>admin</cite></div>
+						<p>Thanks a lot,it&#8217;s a great surprise for me to see how many people like this,and i like this as well.:-)</p>
+<p>If someone has an idea of the problem about Opera and how to fix it,they&#8217;re welcome.!!!</p>
+	
+			<p class="cmttime">17 Dec 2007 at 1:34 pm</p>		
+		</li>
+
+	
+	
+		<li class=" authorcomment" id="comment-12">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-12" title="">#</a> </small><cite>admin</cite></div>
+						<p>Hi all&#8230;.i fixed the opera bug a few minutes ago!!!:-)<br />
+Now it should be ok.</p>
+<p>Thanks a lot to all.</p>
+<p>Ing. Marco Renzi</p>
+	
+			<p class="cmttime">17 Dec 2007 at 2:35 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-14">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-14" title="">#</a> </small><cite><a href='http://www.dechilldinges.nl/katwijk' rel='external nofollow'>Danny</a></cite></div>
+						<p>Superb! The only thing that&#8217;s annoying is the bar which always appears when you hover over an image. Here it shows the thing you entered in the alt section. Is there a way to fix this?</p>
+	
+			<p class="cmttime">17 Dec 2007 at 4:31 pm</p>		
+		</li>
+
+	
+	
+		<li class=" authorcomment" id="comment-15">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-15" title="">#</a> </small><cite>admin</cite></div>
+						<p>Are you using IE?<br />
+I think so&#8230;i&#8217;ll try to fix this as well..i have no time today.I&#8217;ll try to check it for sure tomorrow.</p>
+<p>Thanks.</p>
+	
+			<p class="cmttime">17 Dec 2007 at 4:37 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-16">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-16" title="">#</a> </small><cite>admin</cite></div>
+						<p>It&#8217;s not a bug,it will display the image title only if you&#8217;re waiting over the image(and not moving) as it should do&#8230;.<br />
+but i&#8217;ve a sort of idea to make it right.</p>
+<p>Ing.Marco Renzi</p>
+	
+			<p class="cmttime">17 Dec 2007 at 4:41 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-17">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-17" title="">#</a> </small><cite><a href='http://heppie.nl/' rel='external nofollow'>Edwin Siebel</a></cite></div>
+						<p>Yep, works perfect. Cheers for fixing.</p>
+	
+			<p class="cmttime">19 Dec 2007 at 11:21 am</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-18">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-18" title="">#</a> </small><cite>admin</cite></div>
+						<p>Thanks to you.I want you to stay tuned,and if you need something you sould only ask.I&#8217;m actually searching for some good contacts in the world,and a good and nice job!.I relly like to make new experimental stuff or projects.<br />
+So if you have something good to me just tell!.</p>
+<p>Thanks.</p>
+	
+			<p class="cmttime">19 Dec 2007 at 11:55 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-19">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-19" title="">#</a> </small><cite>Rick Faircloth</cite></div>
+						<p>Hi, Renzi&#8230;</p>
+<p>Looks like you got a really nice plug-in that I&#8217;ve been waiting for for e-commerce use.</p>
+<p>Problem is&#8230; I can&#8217;t figure out where to download it!  The download section on this page has no links (IE7) and neither does the repository on jQuery.com.</p>
+<p>How do I download all necessary files, which I believe is just jqzoom&#8217;s js file and its css file, as well.</p>
+<p>Thanks!</p>
+<p>Rick</p>
+	
+			<p class="cmttime">19 Dec 2007 at 1:49 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-20" title="">#</a> </small><cite>Rick Faircloth</cite></div>
+						<p>Hi, Renzi,</p>
+<p>Looks like you&#8217;ve created the plug-in I&#8217;ve been waiting for for e-commerce sites!</p>
+<p>Problem is&#8230; I can&#8217;t figure out where to download it!  The download section on this page doesn&#8217;t have any active links (IE7), I can&#8217;t find it anywhere else on the site, and jQuery.com doesn&#8217;t have any links, either.</p>
+<p>(I&#8217;m sure I&#8217;m missing something obvious)</p>
+<p>Anyway&#8230; where can I download all necessary files, which I assume as just the js and css files for jZoom.</p>
+<p>Thanks,</p>
+<p>Rick</p>
+	
+			<p class="cmttime">19 Dec 2007 at 1:52 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-21">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-21" title="">#</a> </small><cite>Rick Faircloth</cite></div>
+						<p>Hi, Renzi&#8230;</p>
+<p>Nevermind, I found it.</p>
+<p>I didn&#8217;t think to mouseover &#8220;download&#8221;.. duh.</p>
+<p>I was mousing over the various versions, thinking the links would be there.</p>
+<p>Sorry!</p>
+<p>Rick</p>
+	
+			<p class="cmttime">19 Dec 2007 at 2:03 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-22">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-22" title="">#</a> </small><cite>admin</cite></div>
+						<p>You should click on download..:-)<br />
+Anyway this is the link:<br />
+<a href="http://www.mind-projects.it/blog/wp-content/jqzoom_v1.1.rar" rel="nofollow">http://www.mind-projects.it/blog/wp-content/jqzoom_v1.1.rar</a></p>
+<p>Ing Marco Renzi</p>
+	
+			<p class="cmttime">20 Dec 2007 at 9:30 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-23">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-23" title="">#</a> </small><cite><a href='http://www.noupe.com/ajax/50-amazing-jquery-examples-part1.html' rel='external nofollow'>50+ Amazing Jquery Examples- Part1</a></cite></div>
+						<p>[&#8230;] jQZoom- allows you to realize a small magnifier window close to the image or images on your web page [&#8230;]</p>
+	
+			<p class="cmttime">20 Dec 2007 at 2:55 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-26">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-26" title="">#</a> </small><cite>Franco</cite></div>
+						<p>Hi Renzi, im from Argentina, i hace to say, GOOD JOB&#8230; incredible men, this is very utilizable for catalogs online&#8230;<br />
+Congrats and keep in the good way men!</p>
+<p>Blessings!</p>
+<p>Franco</p>
+	
+			<p class="cmttime">21 Dec 2007 at 1:44 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-27">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-27" title="">#</a> </small><cite>Nathan</cite></div>
+						<p>Hello,</p>
+<p>Terrific idea and great execution. I noticed, though, that it&#8217;s buggy in Safari 3 (I&#8217;m using 3.0.4 on Leopard).  The zoom window is offset about 200 px to the right&#8230;</p>
+	
+			<p class="cmttime">21 Dec 2007 at 4:14 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-28">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-28" title="">#</a> </small><cite><a href='http://david.scatigna.it/2007/12/21/links-for-2007-12-21/' rel='external nofollow'>Skylog &raquo; Blog Archive &raquo; links for 2007-12-21</a></cite></div>
+						<p>[&#8230;] jqzoom | (tags: jquery) [&#8230;]</p>
+	
+			<p class="cmttime">21 Dec 2007 at 7:17 am</p>		
+		</li>
+
+	
+	
+		<li class=" authorcomment" id="comment-29">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-29" title="">#</a> </small><cite>admin</cite></div>
+						<p>Nathan,i&#8217;m looking this plugin in safari 3.0.3 for windows and it looks nice,no bugs at all.<br />
+Tell me more about your problem.</p>
+<p>Thanks.</p>
+<p>Ing. Renzi Marco</p>
+	
+			<p class="cmttime">21 Dec 2007 at 9:05 am</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-58">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-58" title="">#</a> </small><cite>admin</cite></div>
+						<p>I discovered that lightbox was playing strange tricks to me&#8230;.</p>
+<p> <img src='jqzoom_v10_files/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+<p>Thanks</p>
+	
+			<p class="cmttime">20 Jan 2008 at 2:11 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-80">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-80" title="">#</a> </small><cite>Ken</cite></div>
+						<p>Hi Marco,</p>
+<p>Cool module, but I have a problem. It is probably me and my css, but maybe you would be so kind to have a look.</p>
+<p>Not working, and going through Smarty&#8230;.</p>
+<p><a href="http://nethome.be/ss/v2/?mc=error&amp;pg=demo.161801-080124b" rel="nofollow">http://nethome.be/ss/v2/?mc=error&amp;pg=demo.161801-080124b</a></p>
+<p>Working, and standalone&#8230;</p>
+<p><a href="http://nethome.be/ss/v2/templates/mc_demo.161801-080124b-standalone_nl.htm" rel="nofollow">http://nethome.be/ss/v2/templates/mc_demo.161801-080124b-standalone_nl.htm</a></p>
+<p>Different browsers give different results, but none are working as it should.</p>
+<p>Let me know by mail if there is any extra information you would like.</p>
+<p>Best regards,</p>
+<p>Ken</p>
+	
+			<p class="cmttime">24 Jan 2008 at 9:07 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-81">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-81" title="">#</a> </small><cite>admin</cite></div>
+						<p>I discovered and fixed your problem.<br />
+You are using an extra comma.Remember,the last option has no ending comma,and you commented the last one.</p>
+<p>xxx.jqueryzoom({<br />
+				xzoom: 200,<br />
+				yzoom: 200,<br />
+				offset: 10  //no comma //offset(default offset value is 10)  //<br />
+				//position: &#8220;right&#8221; //zooming div position(default position value is &#8220;right&#8221;)<br />
+			});</p>
+<p>Cheers<br />
+Marco <img src='jqzoom_v10_files/icon_wink.gif' alt=';-)' class='wp-smiley' /></p>
+	
+			<p class="cmttime">25 Jan 2008 at 12:10 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-90">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-90" title="">#</a> </small><cite><a href='http://wiki.sharedlog.com' rel='external nofollow'>Dmitri</a></cite></div>
+						<p>This is exactly what I was looking for for my project.<br />
+I first saw this type of feature of a local realtor website<br />
+where you could mouse over an image and a small rectangular box would appear with a magnified part of the image that you mouse over.<br />
+So I started googling for &#8216;magnify script&#8217; and found this.</p>
+<p>Is is possible to make the magnified area appear over the original image approximately at the same spot where you placed the mouse?</p>
+<p>I mean you can look at some real estate listings on this site<br />
+<a href="http://www.saracramer.com/" rel="nofollow">http://www.saracramer.com/</a><br />
+click on &#8216;Sara cramer&#8217;s listings&#8217; on the left, then on any listed home and then on &#8216;more photos&#8217; and mose over a photo.<br />
+the magnified box appears right on the photo and you can move it around the actual picture to view details for any part of the photo</p>
+	
+			<p class="cmttime">27 Jan 2008 at 8:47 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-141">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-141" title="">#</a> </small><cite><a href='http://www.clocal.fr' rel='external nofollow'>Eric</a></cite></div>
+						<p>Hello from France</p>
+<p>Great! thanks for sharing this.</p>
+<p>However I found that using the jquery dimensions plugins solves some issues for complex layout (zoom over a lightbox, facebox or thickbox)</p>
+	
+			<p class="cmttime">05 Feb 2008 at 9:10 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-144">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-144" title="">#</a> </small><cite>John</cite></div>
+						<p>Hi,</p>
+<p>Can I use another tag instead of &#8220;alt&#8221; for the big picture?<br />
+beacause when the user moves the mouse over the picture the alt ugly popup apears with my number-and-numbers jpg pictures.</p>
+<p>Can you please tell me if I can use other tag like big=&#8221;&#8230;&#8221; and then change the js somewhere. </p>
+<p>Thank You and congrats for this fantastic script <img src='jqzoom_v10_files/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+	
+			<p class="cmttime">05 Feb 2008 at 11:38 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-148">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-148" title="">#</a> </small><cite><a href='http://www.flvideoindir.com/ajax-araclari/' rel='external nofollow'>Ajax Araçları : vBMaster.Org Seo Yarışması</a></cite></div>
+						<p>[&#8230;] jQZoom- allows you to realize a small magnifier window close to the image or images on your web page [&#8230;]</p>
+	
+			<p class="cmttime">07 Feb 2008 at 1:06 pm</p>		
+		</li>
+
+	
+	
+		<li class=" authorcomment" id="comment-154">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-154" title="">#</a> </small><cite>admin</cite></div>
+						<p>Today i&#8217;ve released the 1.2 version where i&#8217;ve fixed the ALT problems with IE,showing the image path.</p>
+<p> <img src='jqzoom_v10_files/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+<p>Ing. Marco Renzi</p>
+	
+			<p class="cmttime">09 Feb 2008 at 3:03 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-161">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-161" title="">#</a> </small><cite>XF</cite></div>
+						<p>how use jqzoom with jquery 1.2.x only ?</p>
+<p>with jquery version below 1.2 it&#8217;s ok, with jquery version higher 1.2 : isn&#8217;t ok<br />
+I am compelled to load 2 versions of jquery.</p>
+<p>I use the function<br />
+$(&#8221;a.cartes1&#8243;).click(function() {<br />
+	$(&#8221;div.carte1&#8243;).show();<br />
+	$(&#8221;div.carte2&#8243;).hide();<br />
+	$(&#8221;div.carte3&#8243;).hide();<br />
+});</p>
+<p>I want to win 20 ko on download<br />
+Thank You</p>
+	
+			<p class="cmttime">14 Feb 2008 at 5:35 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-162">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-162" title="">#</a> </small><cite><a href='http://www.visual-blast.com/javascript/jqzoom-jquery-plugin/' rel='external nofollow'>jQZoom - jquery plugin</a></cite></div>
+						<p>[&#8230;] instructions at Mind-Projects jQZoom project page  Did you like this post? Subscribe to our RSS for more! &nbsp;&nbsp; &nbsp;&nbsp; [&#8230;]</p>
+	
+			<p class="cmttime">14 Feb 2008 at 10:20 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt authorcomment" id="comment-165">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-165" title="">#</a> </small><cite>admin</cite></div>
+						<p>tested and fully working with jquery 1.2.3</p>
+<p>Try to read the instructions carefully.</p>
+<p>Ing Renzi Marco</p>
+	
+			<p class="cmttime">16 Feb 2008 at 2:42 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-173">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-173" title="">#</a> </small><cite>Marc</cite></div>
+						<p>Is there a way to make the enlarged image work outside a table cell? I am working with columnar data that really can&#8217;t be done with CSS (that I can figure out anyway). The first cell is a thumbnail of a product. When I use this script and over the image. It loads inside the cell, thereby enlarging the cell accordingly and destroying the page.</p>
+	
+			<p class="cmttime">17 Feb 2008 at 3:50 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-174">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-174" title="">#</a> </small><cite>Marc</cite></div>
+						<p>Never mind previous post. It works much better when you remember to copy the .css file into the right folder! Great script. Keep up the great work!</p>
+	
+			<p class="cmttime">17 Feb 2008 at 4:04 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-177">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-177" title="">#</a> </small><cite>Paul Noble</cite></div>
+						<p>Outstanding work! Gets my vote for the best image magnifier.</p>
+	
+			<p class="cmttime">19 Feb 2008 at 11:24 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-207">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-207" title="">#</a> </small><cite><a href='http://blogdavid.freehostia.com/2008/02/27/50-fantasticos-ejemplos-de-ajax/' rel='external nofollow'>Recursos y Tutoriales &raquo; Blog Archive &raquo; 50 fantasticos ejemplos de Ajax</a></cite></div>
+						<p>[&#8230;] jQZoom- allows you to realize a small magnifier window close to the image or images on your web page [&#8230;]</p>
+	
+			<p class="cmttime">27 Feb 2008 at 12:38 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-225">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-225" title="">#</a> </small><cite>Adam</cite></div>
+						<p>Very useful plugin, i really liked the solution!</p>
+<p>one thing that is still bothering me is the use of the alt attribute for the big image. it would be better to leave the alt for the picture description for SEO important reasons&#8230;</p>
+	
+			<p class="cmttime">02 Mar 2008 at 1:07 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-241">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-241" title="">#</a> </small><cite><a href='http://wip.iridani.com/jqzoom' rel='external nofollow'>&nbsp; jqzoom |&nbsp;by&nbsp;Work In Progress</a></cite></div>
+						<p>[&#8230;] jqzoom | [&#8230;]</p>
+	
+			<p class="cmttime">04 Mar 2008 at 8:34 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-245">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-245" title="">#</a> </small><cite><a href='http://neutratshirts.com' rel='external nofollow'>zeguyz</a></cite></div>
+						<p>What a great and clever script, though I haven&#8217;t tried it but I will definitely use it on my t-shirts site. I don&#8217;t know if I&#8217;m asking too much but it worth mentioning, can you bring it to a level of this site I just worked? visit <a href="http://www.usc.co.uk/Nike+Capri+Mono/00073049400010,default,pd.html?cgid=1100" rel="nofollow">http://www.usc.co.uk/Nike+Capri+Mono/00073049400010,default,pd.html?cgid=1100</a><br />
+this is using scene7 javascript/server script api.</p>
+<p>Peace!</p>
+	
+			<p class="cmttime">05 Mar 2008 at 1:16 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-257">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-257" title="">#</a> </small><cite><a href='http://neutra-tshirts.co.uk' rel='external nofollow'>Zeguyz</a></cite></div>
+						<p>I have used it and I agree with you about the alt attribute, I inserted a new attribute called &#8220;lrg&#8221; so that I won&#8217;t have to use the alt or title. I get away with the new attribute since the xhtml is xml family and that encourage a new tag or attribute.</p>
+	
+			<p class="cmttime">07 Mar 2008 at 1:50 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-268">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-268" title="">#</a> </small><cite>Charles</cite></div>
+						<p>Well I thought the jQzoom wasn&#8217;t working properly.  It would only scroll vertically, not horizonatlly. ThenI found the error.<br />
+I had all my page&#8217;s content with in a body_container DIV, and that DIV had a property of position: relative.  I forget why I put that there, but I didn&#8217;t need it, took that out, and now the jQzoom works perfectly.  Yay.</p>
+	
+			<p class="cmttime">09 Mar 2008 at 6:57 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-286">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-286" title="">#</a> </small><cite>John</cite></div>
+						<p>I should have also said that my image I&#8217;m attempting to use this on is nested amongst a handful of div&#8217;s of which some are set to a relative position and so on.  Is there a list of rules that can cause troubles for this script?</p>
+	
+			<p class="cmttime">11 Mar 2008 at 5:42 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-288">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-288" title="">#</a> </small><cite>John</cite></div>
+						<p>I&#8217;m going to fill this page up, sorry for that.  So I&#8217;ve determined that this app really does not like relative positioning on possible container  elements.  Is there any easy way to fix this or just get things out of relative positioning?</p>
+	
+			<p class="cmttime">11 Mar 2008 at 6:15 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-358">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-358" title="">#</a> </small><cite>Dean</cite></div>
+						<p>I&#8217;ve just been playing around with this and its an absolutely great script. just the one thing that bothering me is i can&#8217;t figure out how to position the zoom div exactly where i want it on the page?</p>
+	
+			<p class="cmttime">17 Mar 2008 at 11:40 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-368">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-368" title="">#</a> </small><cite><a href='http://strazi.org' rel='external nofollow'>strazi</a></cite></div>
+						<p>Excellent work on this, thank you for sharing.</p>
+<p>I am trying to get the zoomdiv to follow the mouse, but so far my results are less than desirable.</p>
+<p>Any recommendations?</p>
+	
+			<p class="cmttime">18 Mar 2008 at 5:14 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-371">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-371" title="">#</a> </small><cite><a href='http://www.eboxnet.gr' rel='external nofollow'>eBoxNet</a></cite></div>
+						<p>Outstanding..Bravo.</p>
+<p>Clean Fast And Easy 2 Use.</p>
+<p>Keep On.</p>
+	
+			<p class="cmttime">19 Mar 2008 at 2:09 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-381">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-381" title="">#</a> </small><cite><a href='http://webdesign.2803.com/javascript/plus-de-50-exemples-dutilisation-de-jquery/' rel='external nofollow'>Plus de 50 exemples d&#8217;utilisation de Jquery</a></cite></div>
+						<p>[&#8230;] et qui méritent que l&#8217;on s&#8217;y attarde un peu! J&#8217;aime notamment l&#8217;effet de zoom sur une image qui permet de montrer des détails non visible sur l&#8217;image d&#8217;origine [&#8230;]</p>
+	
+			<p class="cmttime">19 Mar 2008 at 11:11 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-454">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-454" title="">#</a> </small><cite><a href='http://www.jojet.com' rel='external nofollow'>Joel Hughes</a></cite></div>
+						<p>Oh yes,<br />
+your bit of code showing the examples has a typo:</p>
+<p>You say:<br />
+$(document).ready(function(){<br />
+$(&#8221;.jqzoom&#8221;).jqueryzoom({<br />
+xzoom: 300, //zooming div default width(default width value is 200)<br />
+yzoom: 300, //zooming div default width(default height value is 200)<br />
+offset: 40, //zooming div default offset(default offset value is 10)<br />
+position: &#8220;right&#8221;, //zooming div position(default position value is &#8220;right&#8221;)<br />
+preload:1 // by default preload of big images is 1<br />
+lens:1 // by default the lens is 1<br />
+});<br />
+});</p>
+<p>you&#8217;re missing a comma after the final preload option it should say<br />
+&#8230;<br />
+preload:1, // by default preload of big images is 1<br />
+lens:1 // by default the lens is 1<br />
+});<br />
+});</p>
+<p>No need to post this comment, just amend the example above.</p>
+<p>thanks</p>
+<p>Joel</p>
+	
+			<p class="cmttime">30 Mar 2008 at 9:13 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-475">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-475" title="">#</a> </small><cite><a href='http://www.alexander-langer.de' rel='external nofollow'>Alexander Langer</a></cite></div>
+						<p>I&#8217;d like to use this plugin for a customer&#8217;s website and gladly spend some money if it works out. But for some reason we can only use jQuery 1.1.2 and this plugin just won&#8217;t work with it.</p>
+<p>Firebug says:<br />
+$(this).offset is not a function (jquery.jqzoom.js line 34)</p>
+<p>Any suggestion?</p>
+	
+			<p class="cmttime">03 Apr 2008 at 4:52 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-478">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-478" title="">#</a> </small><cite><a href='https://www.xing.com/profile/Mario_Esposito2' rel='external nofollow'>Mario Esposito</a></cite></div>
+						<p>Molto bello, complimenti!</p>
+	
+			<p class="cmttime">03 Apr 2008 at 10:26 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-484">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-484" title="">#</a> </small><cite>Kamandokaia</cite></div>
+						<p>Hi from Colombia</p>
+<p>Renci, this script rocks!!<br />
+I&#8217;m need to know how to change dynamically the big image.<br />
+I have a micro thumbnails column, the &#8220;normal&#8221; image and a big image. The jqZoom works with ht enormal and big image.<br />
+Dynamically I change the normal imagen when users clicks on microthumbs with document.getElementById(&#8217;normal&#8217;).src, but I don&#8217;t know how to set the big one.</p>
+<p>respect</p>
+	
+			<p class="cmttime">04 Apr 2008 at 10:09 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-491">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-491" title="">#</a> </small><cite><a href='http://tommylynn.com/site/?p=11' rel='external nofollow'>tommylynn.com &raquo; Blog Archive &raquo; Nice Functionality</a></cite></div>
+						<p>[&#8230;] Image Zoom [&#8230;]</p>
+	
+			<p class="cmttime">05 Apr 2008 at 8:32 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-558">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-558" title="">#</a> </small><cite><a href='http://www.w3school.ru/blog/web-development/50-amazing-jquery-examples.html' rel='external nofollow'>50 полезных скриптов и плагинов на jQuery &raquo; Как создать сайт бесплатно? Как сделать сайт? Журнал для веб-мастеров и блогеров от школы создани</a></cite></div>
+						<p>[&#8230;] jQZoom - позволяет показывать увеличенные фрагменты [&#8230;]</p>
+	
+			<p class="cmttime">15 Apr 2008 at 8:39 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-658">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-658" title="">#</a> </small><cite><a href='http://underdeepwater.com/lab.oratoire' rel='external nofollow'>xk_liber</a></cite></div>
+						<p>Another hello from France. <img src='jqzoom_v10_files/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Your plugin is really cool ! <img src='jqzoom_v10_files/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+<p>Just, in your jqzoom.css file, I think you might delete the border property of your &#8220;jqzoom&#8221; class &#8217;cause it make a strange dot (pixel) on your &#8220;span&#8221; which has the &#8220;jqzoom&#8221; class and this border is not really necessary on your images put in other &#8220;span&#8221; elements with this same class.<br />
+ <img src='jqzoom_v10_files/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+<p>Arrivederci <img src='jqzoom_v10_files/icon_smile.gif' alt=':-)' class='wp-smiley' /></p>
+	
+			<p class="cmttime">22 Apr 2008 at 2:01 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-730">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-730" title="">#</a> </small><cite><a href='http://jaswindervirdee.prismdesigns.co.uk/?p=4' rel='external nofollow'>fr3ecommerce - Notebook</a></cite></div>
+						<p>[&#8230;] thinking about the name; fr = free, 3 = three systems already available (fatfreecart; js-kit; jqzoom.[other systems you may know of please let me know]), ecommerce = obvious. I am looking for php [&#8230;]</p>
+	
+			<p class="cmttime">28 Apr 2008 at 12:06 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-820">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-820" title="">#</a> </small><cite><a href='http://www.derivehost.com' rel='external nofollow'>Derive Host</a></cite></div>
+						<p>Many Thanks for Sharing, such a valuable information.</p>
+<p>Best Regards<br />
+Team<br />
+<a href="http://www.derivehost.com" rel="nofollow">Web Hosting Sri Lanka </a></p>
+	
+			<p class="cmttime">05 May 2008 at 6:44 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-877">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-877" title="">#</a> </small><cite>Rob</cite></div>
+						<p>nice work, would be good to see a port to prototype though as I only use jquery for adobe air but prototype for all my web work.</p>
+	
+			<p class="cmttime">12 May 2008 at 12:00 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-878">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-878" title="">#</a> </small><cite><a href='http://www.collinswang.cn/?p=41' rel='external nofollow'>SHOPEX模板设计,ECSHOP模板设计 &raquo; JQuery图片放大镜效果插件</a></cite></div>
+						<p>[&#8230;] 作者网页：http://www.mind-projects.it/blog/jqzoom_v10 [&#8230;]</p>
+	
+			<p class="cmttime">12 May 2008 at 12:38 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-883">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-883" title="">#</a> </small><cite>Dimitar</cite></div>
+						<p>It&#8217;s really good tool!<br />
+But i thing it will be great if there was a vertical offset parameter, because the current works only horizontally.</p>
+<p>Dimitar</p>
+	
+			<p class="cmttime">12 May 2008 at 4:45 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-902">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-902" title="">#</a> </small><cite>oli</cite></div>
+						<p>Hi</p>
+<p>This is just what I&#8217;ve been looking for, but the movement of the large image is a bit jerky, compared to the ones on <a href="http://www.endless.com" rel="nofollow">www.endless.com</a> and <a href="http://www.gap.com." rel="nofollow">www.gap.com.</a> Can the script be tweaked to make it smoother?</p>
+<p>Olly</p>
+	
+			<p class="cmttime">16 May 2008 at 2:48 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-998">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-998" title="">#</a> </small><cite><a href='http://www.vocidalweb.it/2008/05/24/script-per-realizzare-zoom-alle-immagini/' rel='external nofollow'>Script per realizzare zoom alle immagini&nbsp;|&nbsp;Voci dal web</a></cite></div>
+						<p>[&#8230;] Jquery potrete realizzare un bellissimo script per zoommare sulle vostre immagini. Qui trovate come installarlo. Qui invece per [&#8230;]</p>
+	
+			<p class="cmttime">24 May 2008 at 10:08 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-999">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-999" title="">#</a> </small><cite><a href='http://www.vocidalweb.it/2008/05/24/script-per-realizzare-zoom-alle-immagini/' rel='external nofollow'>Script per realizzare zoom alle immagini&nbsp;|&nbsp;Voci dal web</a></cite></div>
+						<p>[&#8230;] Jquery potrete realizzare un bellissimo script per zoommare sulle vostre immagini. Qui trovate come installarlo. Qui invece per [&#8230;]</p>
+	
+			<p class="cmttime">24 May 2008 at 10:08 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1013">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1013" title="">#</a> </small><cite><a href='http://www.9sert.com/?p=40' rel='external nofollow'>9sert.com &raquo; Blog Archive &raquo; ซูมภาพใบแบบของ jQZoom</a></cite></div>
+						<p>[&#8230;] ดาวน์โหลดที่นี่ครับ  [&#8230;]</p>
+	
+			<p class="cmttime">26 May 2008 at 3:06 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1027">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1027" title="">#</a> </small><cite>YeQingIt</cite></div>
+						<p>It&#8217;s so cool Effect!<br />
+Thanks for your work,I love it.</p>
+	
+			<p class="cmttime">28 May 2008 at 2:40 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1073">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1073" title="">#</a> </small><cite>AS</cite></div>
+						<p>First and most importantly: this is a really cool plugin, so thanks for all your hard work!</p>
+<p>I am interested in a way to disable the plugin&#8230;is there a way to do that currently? I have a &#8220;gallery&#8221; page I am working on where I want the user to be able to &#8220;activate&#8221; the jqzoom plugin, and then be able to click another button to &#8220;deactivate&#8221; the plugin (eliminate the hover/mouseover and zooming). Would this require a modification of the original plugin?<br />
+Thanks in advance!<br />
+-a</p>
+	
+			<p class="cmttime">03 Jun 2008 at 10:49 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1089">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1089" title="">#</a> </small><cite><a href='http://codelog.cn/?p=11' rel='external nofollow'>50多个强大的jQuery插件应用实例 | CodeLog</a></cite></div>
+						<p>[&#8230;] SlideShows － 幻灯片 10) jQZoom-让你在你的网页上很简单的实现图片的缩放功能。 [&#8230;]</p>
+	
+			<p class="cmttime">06 Jun 2008 at 9:52 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1094">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1094" title="">#</a> </small><cite><a href='http://stormcrowpictures.com' rel='external nofollow'>Carlene</a></cite></div>
+						<p>This is an amazing script! I do love the JQuery model and am trying to adopt it from now on. </p>
+<p>I&#8217;m doing a commercial site and would like to test it and will donate to you if I use it. My problem is that I&#8217;m a Mac developer and the os doesn&#8217;t seem to recognize the .rar extension. Is there a .zip or .bin compressed file available? </p>
+<p>Great work!</p>
+	
+			<p class="cmttime">06 Jun 2008 at 7:27 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1114">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1114" title="">#</a> </small><cite><a href='http://www.webcssdesign.com/ajax/jquery-zoom-et-50-exemples-dutilisations/' rel='external nofollow'>jQuery Zoom et 50 exemples d&#8217;utilisations | WebCssDesign</a></cite></div>
+						<p>[&#8230;] verrez il y a des effets qui sympathiques et qui méritent que le coup d&#8217;oeil, notamment l’effet de zoom sur une image qui permet de montrer des détails non visible sur l’image [&#8230;]</p>
+	
+			<p class="cmttime">09 Jun 2008 at 11:51 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1131">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1131" title="">#</a> </small><cite><a href='http://www.alojaweb.pe' rel='external nofollow'>Alojaweb</a></cite></div>
+						<p>excellent article, thanks for the contribution.</p>
+<p>another link of zoom <a href="http://fancy.klade.lv/" rel="nofollow">http://fancy.klade.lv/</a></p>
+	
+			<p class="cmttime">13 Jun 2008 at 7:09 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1155">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1155" title="">#</a> </small><cite><a href='http://onetune.com' rel='external nofollow'>Pablo Diaz</a></cite></div>
+						<p>Very good plugin,<br />
+It would be useful setting a fixed position option for all zoomdivs in a page. I&#8217;ve got this way:</p>
+<p>Change line 22:<br />
+	preload: 1<br />
+to:<br />
+	preload: 1,<br />
+	ypos: false</p>
+<p>And line 78:<br />
+	$(&#8221;div.zoomdiv&#8221;).css({ top: imageTop,left: leftpos });<br />
+to:<br />
+	if(settings.ypos != false){<br />
+	  $(&#8221;div.zoomdiv&#8221;).css({ top: settings.ypos,left: leftpos });<br />
+	}else{<br />
+	  $(&#8221;div.zoomdiv&#8221;).css({ top: imageTop,left: leftpos });<br />
+	}</p>
+<p>Now you can set the absolute ypos option at plugin calling:</p>
+<p>$(document).ready(function(){ $(&#8221;.jqzoom&#8221;).jqueryzoom({<br />
+	ypos:300<br />
+}); });</p>
+<p>&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;.<br />
+Thank you for your great work,<br />
+Pablo</p>
+	
+			<p class="cmttime">16 Jun 2008 at 3:36 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1246">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1246" title="">#</a> </small><cite><a href='http://www.visual-blast.com/javascript/jqzoom-22-jquery-image-zoom-tool/' rel='external nofollow'>jQZoom 2.2 - jQuery Image Zoom Tool</a></cite></div>
+						<p>[&#8230;] instructions and update at jQZoom v2.2 project [&#8230;]</p>
+	
+			<p class="cmttime">23 Jun 2008 at 12:45 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1317">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1317" title="">#</a> </small><cite><a href='http://www.handbagsmerchant.com' rel='external nofollow'>replica handbag</a></cite></div>
+						<p>Hi, Renzi,i test your module with module pages,it&#8217;s ok.but i try to copy and then plaste the code in my online store by zen cart code , it does not work well..</p>
+	
+			<p class="cmttime">29 Jun 2008 at 3:38 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1326">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1326" title="">#</a> </small><cite><a href='http://www.en-rose.biz' rel='external nofollow'>miky</a></cite></div>
+						<p>hi, it&#8217;s very cools plug in top very top!!!<br />
+thanks this devellopement very wonderfull&#8230;</p>
+<p>it is possible to include this script in product scoller of virtuemart 1.1 in joomla 1.0.15 ?</p>
+<p>because i very need this in scroller product </p>
+<p>how to do this ?</p>
+<p>thanks you help</p>
+<p>from paris </p>
+<p>I speack very no good english but i ander standing ..lol</p>
+	
+			<p class="cmttime">30 Jun 2008 at 11:08 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1333">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1333" title="">#</a> </small><cite><a href='http://onetune.com' rel='external nofollow'>gasgarage</a></cite></div>
+						<p>Why did you remove my comment about absolute y positioning modification?</p>
+<p>I though it could be useful for your great plugin. Don&#8217;t you?</p>
+	
+			<p class="cmttime">01 Jul 2008 at 8:42 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1414">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1414" title="">#</a> </small><cite>chalda</cite></div>
+						<p>Veramente molto bello.<br />
+Penso che l&#8217;utilizzerò in molti siti di eCommerce <img src='jqzoom_v10_files/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+Ciao e grazie!</p>
+	
+			<p class="cmttime">10 Jul 2008 at 5:03 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1438">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1438" title="">#</a> </small><cite><a href='http://www.sb4m.com/2008/07/12/ajouter-une-loupe-sur-vos-images-avec-jquery/' rel='external nofollow'>Ajouter une loupe sur vos images avec JQuery at SB4M - Mon Blog</a></cite></div>
+						<p>[&#8230;] JQZoom est un plugin pour JQuery permettant d&#8217;ajouter une loupe sur vos images. [&#8230;]</p>
+	
+			<p class="cmttime">12 Jul 2008 at 10:37 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1441">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1441" title="">#</a> </small><cite><a href='http://fairyfish.net/2008/07/12/jqzoom/' rel='external nofollow'>jQZoom</a></cite></div>
+						<p>[&#8230;] 12th, 2008 at 07:04pm 雪山飞猪 浏览: 6   jQZoom 是一个 jQuery [&#8230;]</p>
+	
+			<p class="cmttime">12 Jul 2008 at 12:04 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1443">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1443" title="">#</a> </small><cite><a href='http://www.sinerjik.org/yazi/jqzoom-jquery-ile-yakinlastirma/' rel='external nofollow'>Jqzoom: jQuery ile Yakınlaştırma | Sinerjik Günlük</a></cite></div>
+						<p>[&#8230;] yakınlaştırabileceksiniz.jQuery zoom plugin sayesinde olacak bunlar tabiiki. Demo sayfasına şuradan ulaşabilir, şuradan bilgisayarınıza [&#8230;]</p>
+	
+			<p class="cmttime">12 Jul 2008 at 12:41 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1444">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1444" title="">#</a> </small><cite><a href='http://www.fuzzlinks.com/2008/07/12/jqzoom/' rel='external nofollow'>FuzzLinks.com &raquo; jqzoom |</a></cite></div>
+						<p>[&#8230;] <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a> [&#8230;]</p>
+	
+			<p class="cmttime">12 Jul 2008 at 1:06 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1454">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1454" title="">#</a> </small><cite><a href='http://tablosign.com/es/jqzoom-efecto-zoom-sobre-las-imagenes/' rel='external nofollow'>jQZoom: Efecto Zoom sobre las imagenes &mdash; Tablosign</a></cite></div>
+						<p>[&#8230;] darle un excelente efecto Zoom a tus imágenes. En el blog del autor te enseñan como usarlo. jQZoom V2 0 [&#8230;]</p>
+	
+			<p class="cmttime">12 Jul 2008 at 8:26 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1474">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1474" title="">#</a> </small><cite><a href='http://cssbrigit.com/blog/entrada/2008071311530849' rel='external nofollow'>CSS Brigit Leyendo</a></cite></div>
+						<p><strong> &#8230;</strong></p>
+<p>Leyendo diarioTHC descubro JQZoom. Cómo su mismo nombre deja adivinar JQZoom es un plugin para JQuery que te permite ampliar la región de una imagen sobre la que tengas posicionado el puntero. Puedes ver ejemplos y un tutorial de su instalación en s&#8230;</p>
+	
+			<p class="cmttime">13 Jul 2008 at 7:53 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1479">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1479" title="">#</a> </small><cite><a href='http://mojojo.cn/blog/index.php/?p=112' rel='external nofollow'>MOJOJO’ 7788 &raquo; Blog Archive &raquo; 几个网页应用代码</a></cite></div>
+						<p>[&#8230;] <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a> [&#8230;]</p>
+	
+			<p class="cmttime">14 Jul 2008 at 3:26 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1485">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1485" title="">#</a> </small><cite><a href='http://marwebdesign.net/?p=164' rel='external nofollow'>www.marwebdesign.net &raquo; Blog Archive &raquo; mooZoom si jQZooom, via www.visual-blast.com, respectiv www.webresourcesdepot.com</a></cite></div>
+						<p>[&#8230;] : <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">www.mind-projects.it/blog/jqzoom_v10</a> , via [&#8230;]</p>
+	
+			<p class="cmttime">14 Jul 2008 at 9:03 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1487">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1487" title="">#</a> </small><cite><a href='http://blog.performsec.com/2008/07/14/jqzoom-%e2%80%93-hacer-zoom-sobre-imagenes/' rel='external nofollow'>PerformSec Blog &raquo; jQZoom – Hacer zoom sobre imágenes</a></cite></div>
+						<p>[&#8230;] usuario quiere tener todos los detalles posibles del producto que adquirirá. Esto nos permite hacer jQZomm, un plugin de jQuery con el cual podremos cargar dos imágenes, una miniatura y otra más grande [&#8230;]</p>
+	
+			<p class="cmttime">14 Jul 2008 at 9:37 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1499">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1499" title="">#</a> </small><cite><a href='http://www.ricoterox.com.ar/2008/07/14/jqzoom-%e2%80%93-hacer-zoom-sobre-imagenes/' rel='external nofollow'>jQZoom – Hacer zoom sobre imágenes &raquo; Ricotero's Blog</a></cite></div>
+						<p>[&#8230;] usuario quiere tener todos los detalles posibles del producto que adquirirá. Esto nos permite hacer jQZomm, un plugin de jQuery con el cual podremos cargar dos imágenes, una miniatura y otra más grande [&#8230;]</p>
+	
+			<p class="cmttime">14 Jul 2008 at 8:33 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1502">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1502" title="">#</a> </small><cite><a href='http://www.minezone.org/' rel='external nofollow'>Matt V.</a></cite></div>
+						<p>I don&#8217;t see a license associated with the script. Any chance you could license it under a dual MIT/GPL license like jQuery?</p>
+<p>Also, rather than creating a separate &#8220;jqzoom&#8221; div and assigning a jqimg class, why not do something like the jQuery ThickBox plugin does, where the small image is wrapped inside a link to the larger image? That way if a user does not have javascript enabled, it will degrade gracefully, allowing the user to click on the thumbnail to view the larger image.</p>
+<p>I was thinking of developing a Drupal module around the script, but resolving the two issues above would make it significantly easier.</p>
+<p>In any case, thanks for the script!</p>
+	
+			<p class="cmttime">15 Jul 2008 at 12:02 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1510">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1510" title="">#</a> </small><cite><a href='http://www.webtutorials.be/2008/07/15/jquery-jqzoom-image-zooming/' rel='external nofollow'>jQuery : jQZoom image zooming | Web Tutorials</a></cite></div>
+						<p>[&#8230;] Website : <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a> [&#8230;]</p>
+	
+			<p class="cmttime">15 Jul 2008 at 8:48 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1513">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1513" title="">#</a> </small><cite><a href='http://blogs.ort.org.il/leac/archives/6' rel='external nofollow'>links for 2008-07-15&raquo; בלוגה של אמא</a></cite></div>
+						<p>[&#8230;] jqZoom (tags: jquery jquery-gallery-zoom) [&#8230;]</p>
+	
+			<p class="cmttime">15 Jul 2008 at 11:44 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1526">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1526" title="">#</a> </small><cite><a href='http://www.aodoe.com' rel='external nofollow'>Aodoe</a></cite></div>
+						<p>Thanks , I like it, and it is very usefull, but I think ,can it put under the small pic? I want it.</p>
+	
+			<p class="cmttime">16 Jul 2008 at 2:01 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1532">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1532" title="">#</a> </small><cite>Ralf</cite></div>
+						<p>Hi Marco,</p>
+<p>nice work, but there are any problems with transparency PNGs in the IE &lt; vs.7, because the AlphaImageLoader-filter deletes the img-Tag and therefore the jqimg-attribute doesn&#8217;t exists no longer. In this case I must use a hidden layer, which consists the path-value for the big image.</p>
+<p>Also the use of an specific container as goal (I must optimized your code for this functionality ;-)) produce an error with the scrollLeft-behavior. I don&#8217;t know why, so I use css(marginLeft:something) and it works fine.</p>
+<p>Nevertheless thanks for your great work. It saves me a little time.</p>
+<p>Best regards from munich<br />
+Ralf</p>
+	
+			<p class="cmttime">16 Jul 2008 at 10:04 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1533">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1533" title="">#</a> </small><cite><a href='http://www.appzombie.com/image-zooming-with-jquery.html' rel='external nofollow'>Image Zooming With jQuery | APPZOMBiE</a></cite></div>
+						<p>[&#8230;] Zooming With jQuery July 16th, 2008 Posted in Effect, Extras    jqZoom is a jQuery plugin which enables images to be [&#8230;]</p>
+	
+			<p class="cmttime">16 Jul 2008 at 11:48 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1569">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1569" title="">#</a> </small><cite><a href='http://gloobs.wordpress.com/2008/07/18/zoom-con-jquery-alucinante/' rel='external nofollow'>Zoom con jQuery&#8230; Alucinante !!! &laquo; Blog de Diseño Web</a></cite></div>
+						<p>[&#8230;] El plugin se llama jQzoom y tanto la descarga como los ejemplos los podéis conseguir en Mind Projects. [&#8230;]</p>
+	
+			<p class="cmttime">18 Jul 2008 at 8:01 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1571">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1571" title="">#</a> </small><cite><a href='http://meneame.net/story/zoom-con-ajax-eng' rel='external nofollow'>meneame.net</a></cite></div>
+						<p><strong>Zoom con Ajax (eng)&#8230;</strong></p>
+<p>Hasta hace poco era impensable hacer ciertas cosas con tecnologías que no fueran Flash o equivalentes y poderlas hacer en cambio con AJAX. Este es un ejemplo más de la potencia que tienen las tecnologías y frameworks libres que por fortuna están qu&#8230;</p>
+	
+			<p class="cmttime">18 Jul 2008 at 9:38 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1579">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1579" title="">#</a> </small><cite><a href='http://www.ciceklive.com' rel='external nofollow'>Çiçek Live</a></cite></div>
+						<p>Super&#8230;Thanks&#8230;</p>
+	
+			<p class="cmttime">19 Jul 2008 at 4:37 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1592">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1592" title="">#</a> </small><cite><a href='http://www.schallschlucker.de' rel='external nofollow'>Paul</a></cite></div>
+						<p>realy a nice plugin, but wouldn&#8217;t it be better instead of using an invalid attribute like &#8220;jqimg&#8221; (which does not validate in any html validator) to use the title attribute of the image to store the url of the full size image in? another way would be to simply require the user to upload the two images following a simple name convention like: _thumbnail.jpg and _zoomed </p>
+<p>Keep up the good work!</p>
+	
+			<p class="cmttime">19 Jul 2008 at 7:24 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1598">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1598" title="">#</a> </small><cite><a href='http://www.luna-lab.net/wp/2008/07/20/jquery-%e3%82%ba%e3%83%bc%e3%83%a0%e3%82%b5%e3%83%b3%e3%83%97%e3%83%ab/' rel='external nofollow'>jquery ズームサンプル | Web Design Lab</a></cite></div>
+						<p>[&#8230;] サムネイル画像 ズーム時用画像 jquery.js(最新版ではなく、Mind Projectで使用しているバージョン) jqzoom.js(配布先:Mind Projects) [&#8230;]</p>
+	
+			<p class="cmttime">20 Jul 2008 at 4:43 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1620">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1620" title="">#</a> </small><cite><a href='http://speckyboy.com/2008/07/21/20-amazing-jquery-plugins-and-65-excellent-jquery-resources/' rel='external nofollow'>20 Amazing jQuery Plugins and 65 Excellent jQuery Resources | Speckyboy - Wordpress and Design</a></cite></div>
+						<p>[&#8230;] 13. jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">21 Jul 2008 at 10:14 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1621">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1621" title="">#</a> </small><cite><a href='http://lautundklar.de/blog/2008/07/21/javascript-image-zoom-mit-jquery/' rel='external nofollow'>LautundKlar Webdesign Blog &raquo; JavaScript Image Zoom mit jQuery</a></cite></div>
+						<p>[&#8230;] jqZoom JavaScript Image Zoom [&#8230;]</p>
+	
+			<p class="cmttime">21 Jul 2008 at 11:33 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1636">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1636" title="">#</a> </small><cite><a href='http://www.openjason.com/2008/07/21/100-scripts-and-script-resources/' rel='external nofollow'>100 Scripts and Script Resources | OpenJason</a></cite></div>
+						<p>[&#8230;] jqzoom | [&#8230;]</p>
+	
+			<p class="cmttime">22 Jul 2008 at 7:06 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1645">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1645" title="">#</a> </small><cite>Zeliboba</cite></div>
+						<p>Hello,</p>
+<p>I&#8217;d like to use your script in my commercial component. Under what license is your code released? May I use it?</p>
+<p>Thanks!</p>
+	
+			<p class="cmttime">22 Jul 2008 at 5:40 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1674">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1674" title="">#</a> </small><cite><a href='http://jryj.com/jqzoom-javascript-image-zoom-tool-155/' rel='external nofollow'>jQZoom - Javascript Image Zoom Tool my.bookmarks</a></cite></div>
+						<p>[&#8230;] allows you to realize a small magnifier window close to the image or images on your web page easily. (full story) [&#8230;]</p>
+	
+			<p class="cmttime">26 Jul 2008 at 9:07 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1705">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1705" title="">#</a> </small><cite><a href='http://zitizonx.wordpress.com/2008/07/29/css-layouts-and-good-tutorials/' rel='external nofollow'>Css Layouts and Good Tutorials &laquo; Developer Note Book (.Net)</a></cite></div>
+						<p>[&#8230;] as, <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a>   Posted in [&#8230;]</p>
+	
+			<p class="cmttime">29 Jul 2008 at 8:38 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-1920">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1920" title="">#</a> </small><cite>isuelt</cite></div>
+						<p>This script is great!</p>
+<p>How can I setup the zoom div to always show up in t same spot on the page?</p>
+	
+			<p class="cmttime">07 Aug 2008 at 1:07 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1929">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-1929" title="">#</a> </small><cite>tiago</cite></div>
+						<p>thanks, i like it so much</p>
+	
+			<p class="cmttime">07 Aug 2008 at 5:21 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2027">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2027" title="">#</a> </small><cite><a href='http://www.pixey.de/fotos-zoomen-mit-jqzoom-script/' rel='external nofollow'>Fotos zoomen mit jqzoom script &raquo; &raquo; pixey.de</a></cite></div>
+						<p>[&#8230;] <a href="http://www.mind-projects.it/Format:" rel="nofollow">http://www.mind-projects.it/Format:</a> jQuery JavascroptDownload   Diese Icons verzweigen auf soziale Netzwerke bei denen Nutzer [&#8230;]</p>
+	
+			<p class="cmttime">13 Aug 2008 at 10:34 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2029">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2029" title="">#</a> </small><cite>Luke</cite></div>
+						<p>great script: </p>
+<p>works perfect on FF . </p>
+<p>In IE6 on XP, I get the bar (and am using script latest version!) for the alt (?) of my non-zoomed image (the one on the left), when I hover mouse.</p>
+<p>I also had an issue with the ZoomDiv being too low down, so I used margin-top:-20px (or whatever) in the CSS.</p>
+<p>In IE 6 I also have content beneath the zoomDiv &#8212; this includes a form SELECT which still shows! Argh! Can anyone suggest a fix for this (it is more to do with the z-index I suppose?) Maybe I can set a z-index:1 on the normal content and help IE understand <img src='jqzoom_v10_files/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>thanks / mille grazie per il Scritto! Ti voglio moci bene <img src='jqzoom_v10_files/icon_wink.gif' alt=';)' class='wp-smiley' /></p>
+	
+			<p class="cmttime">13 Aug 2008 at 3:43 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2030">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2030" title="">#</a> </small><cite>Luke</cite></div>
+						<p>hey coolness! After an hour of looking at over-complicated Ie6 fixes&#8230;I google-fu&#8217;d a JQuery plugin that does what we need to fix in ie6 with selects! w00t!!</p>
+	
+			<p class="cmttime">13 Aug 2008 at 4:36 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2044">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2044" title="">#</a> </small><cite>Paolo</cite></div>
+						<p>Hi Marco, first my compliments for this script.</p>
+<p>I made a slightly mod to accomplish my needs: I&#8217;m using your script in a site (e-commerce demo) where I have, in the product details page, one main image and x (ranging fro 0 to unlimited) additional images (the main is medium sized and the others are small-sized).</p>
+<p>I needed to have the divzoom always in the same place, so I re-arranged your code to achieve this.</p>
+<p>Here is what I did:</p>
+<p>gave an ID to the div surrounding the main image: id=&#8221;main_image&#8221;</p>
+<p>then in the jquery.jqzoom.js file, around line 40 I added these three rows:</p>
+<p>        // Just for the position of the zoomdiv<br />
+        var imageLeftzd = $(&#8221;#main_image&#8221;).offset().left;<br />
+        var imageTopzd = $(&#8221;#main_image&#8221;).offset().top;<br />
+        var mainimageWidthzd = $(&#8221;#main_image&#8221;).get(0).offsetWidth;</p>
+<p>then I modified the following part of code (after some rows) that takes care of position of zoomdiv, in this way:</p>
+<p>		    if(settings.position == &#8220;right&#8221;){</p>
+<p>            if(imageLeftzd + mainimageWidthzd + settings.offset + settings.xzoom &gt; screen.width){</p>
+<p>            leftpos = imageLeftzd  - settings.offset - settings.xzoom;</p>
+<p>            }else{</p>
+<p>		    leftpos = imageLeftzd + mainimageWidthzd + settings.offset;<br />
+            }<br />
+		    }else{<br />
+		    leftpos = imageLeftzd - settings.xzoom - settings.offset;<br />
+		    if(leftpos &lt; 0){</p>
+<p>            leftpos = imageLeftzd + mainimageWidthzd  + settings.offset;</p>
+<p>		    }</p>
+<p>		    }</p>
+<p>		    $(&#8221;div.zoomdiv&#8221;).css({ top: imageTopzd,left: leftpos });</p>
+<p>It works like a charm, thank you again <img src='jqzoom_v10_files/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+<p>Now a question (since it passed a lot of time since I worked hardly with jquery and I&#8217;m not very practiced at the moment):</p>
+<p>Is it possible/easy not to preload the big image, but just to retrieve it via ajax request?</p>
+	
+			<p class="cmttime">15 Aug 2008 at 9:49 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2080">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2080" title="">#</a> </small><cite><a href='http://thetoptenme.wordpress.com/2008/08/19/the-complete-guide-for-jquery-developer-reblog/' rel='external nofollow'>&#8220;The Complete Guide&#8221; for jQuery Developer- Reblog &laquo; Dynamic Disruption</a></cite></div>
+						<p>[&#8230;] jQZoomZoom in the images without losing sight of the rest and without opening a new page. [&#8230;]</p>
+	
+			<p class="cmttime">19 Aug 2008 at 3:45 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2107">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2107" title="">#</a> </small><cite><a href='http://www.drweb.de/weblog/weblog/?p=1345' rel='external nofollow'>20 frische AJAX- und Javascripts | Javascript | Dr. Web Weblog</a></cite></div>
+						<p>[&#8230;] jQZoom Das JQuery Plugin zoomt Bilder [&#8230;]</p>
+	
+			<p class="cmttime">21 Aug 2008 at 1:29 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2120">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2120" title="">#</a> </small><cite><a href='http://www.elvisciotti.it/blog/archives/180' rel='external nofollow'>links for 2008-08-22 | EC blog</a></cite></div>
+						<p>[&#8230;] jqzoom | [&#8230;]</p>
+	
+			<p class="cmttime">22 Aug 2008 at 8:33 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2181">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2181" title="">#</a> </small><cite><a href='http://matteogallinucci.it' rel='external nofollow'>Mat</a></cite></div>
+						<p>Script utilissimo&#8230;e la demo2 mi fa morire dal ridere!!!</p>
+	
+			<p class="cmttime">30 Aug 2008 at 12:04 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2203">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2203" title="">#</a> </small><cite><a href='http://blog.expertzweb.com/archives/166' rel='external nofollow'>50+ Amazing Jquery Examples- Part1 at expertzweb</a></cite></div>
+						<p>[&#8230;] jQZoom- allows you to realize a small magnifier window close to the image or images on your web page [&#8230;]</p>
+	
+			<p class="cmttime">01 Sep 2008 at 7:19 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2274">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2274" title="">#</a> </small><cite>Yaz</cite></div>
+						<p>I love this script, I am working on a project and the script works in my slideshow, the result on firefox are great, but on IE I get my big image imbedded within my slideshow thus cutting of the big image and my lightbox has my next image from the slide show as I am hovering the existing image.  </p>
+<p>I will contribute to your efforts, but I would like to know if I able to use this for my project.  This is the page I am working on: <a href="http://www.crowellandco.com/project.php" rel="nofollow">http://www.crowellandco.com/project.php</a>  the function you want to look at in the page is: fadeshow.prototype.populateslide<br />
+Thank you for your help.<br />
+Yaz</p>
+	
+			<p class="cmttime">11 Sep 2008 at 1:46 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2277">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2277" title="">#</a> </small><cite><a href='http://www.lightecho.com/index.php/content/my-new-test-posting' rel='external nofollow'>MY new test posting | lightecho.com</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">11 Sep 2008 at 8:22 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2281">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2281" title="">#</a> </small><cite><a href='http://www.ziosteve.com/altro/rendi-piu-dinamici-i-tuoi-siti-internet/' rel='external nofollow'>Rendi più dinamici i tuoi siti internet</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">11 Sep 2008 at 2:53 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2286">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2286" title="">#</a> </small><cite><a href='http://www.cgitop.com/2008/09/12/jqzoom.html' rel='external nofollow'>jQZoom | HTML PHP CSS Web 2.0</a></cite></div>
+						<p>[&#8230;] <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a> [&#8230;]</p>
+	
+			<p class="cmttime">12 Sep 2008 at 7:22 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2287">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2287" title="">#</a> </small><cite><a href='http://www.e-maniacs.com/blog/2008/09/12/web-20-designs-and-javascript/' rel='external nofollow'>E-maniacs Blog &raquo; Blog Archive &raquo; Web 2.0 designs and Javascript</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">12 Sep 2008 at 9:58 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2288">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2288" title="">#</a> </small><cite><a href='http://www.14551.org/2008-09-05/47-javascript-plugins/' rel='external nofollow'>47 Javascript plugins | polaris14551</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">12 Sep 2008 at 10:35 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2307">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2307" title="">#</a> </small><cite><a href='http://blog.ivusko.sk:80/blog/webdesign/jqzoom-lepsi-ako-lightbox-greybox-vhodny-pre-eshopy/' rel='external nofollow'>&raquo; JQzoom - lepší ako lightbox, greybox, vhodný pre eshopy ivusko a jeho blog: freelance webdesigner, internet marketing konzultant, drum and bass dj a promoter</a></cite></div>
+						<p>[&#8230;] ako lightbox, greybox, vhodný pre eshopy Posted By: admin&nbsp; Published in Webdesign  14Sep   Javascript, pomocou ktorého umožníte Vašim návštevníkom eshopu, pozrieť detailne určitý produkt. Je [&#8230;]</p>
+	
+			<p class="cmttime">14 Sep 2008 at 12:33 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2342">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2342" title="">#</a> </small><cite><a href='http://drlex.jogger.pl' rel='external nofollow'>Lex</a></cite></div>
+						<p>I like jqzoom a lot. I added some effects like<br />
+fadeIn(), fadeOut() and dropShadow() for the large picture and looks simply coool.</p>
+	
+			<p class="cmttime">17 Sep 2008 at 7:17 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2345">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2345" title="">#</a> </small><cite><a href='http://www.forestview.com.ph' rel='external nofollow'>Milo</a></cite></div>
+						<p>Hi, I&#8217;m trying to make my site w3c comlpliant however when I use the w3c validator it doesnt accept the jqimg attribute. It says something like</p>
+<p>Line 35, Column 120: there is no attribute &#8220;JQIMG&#8221;.</p>
+<p>How can I use jqzoom with html strict doctype? I tried switching to transitional and I still get the same error. Can I set jqimg in CSS? If that is possible will the CSS also validate?</p>
+	
+			<p class="cmttime">17 Sep 2008 at 1:21 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2374">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2374" title="">#</a> </small><cite><a href='http://www.8deg.cn' rel='external nofollow'>8deg</a></cite></div>
+						<p>It’s really good tool!</p>
+	
+			<p class="cmttime">19 Sep 2008 at 8:17 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2496">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2496" title="">#</a> </small><cite><a href='http://www.caqo.org' rel='external nofollow'>maynet</a></cite></div>
+						<p>this is supper..!!!!!!!!!  thnks admin =)</p>
+	
+			<p class="cmttime">28 Sep 2008 at 1:51 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2501">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2501" title="">#</a> </small><cite><a href='http://0n8.info/blog/50-jquery-ornegi-1' rel='external nofollow'>0 n 8 = ? &raquo; Blog Archive &raquo; 50 Jquery Örneği -1</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">28 Sep 2008 at 9:08 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2534">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2534" title="">#</a> </small><cite><a href='http://www.miodestino.co.uk' rel='external nofollow'>Colleen</a></cite></div>
+						<p>Hello, </p>
+<p>We would like to use this zoom application, however, we are wondering about the affect of download speeds if we upload all high resolution images to our 450+ products.  </p>
+<p>Can you advise on what the best resolution is and how this will affect the download speed of the website?</p>
+<p>Many thanks<br />
+Colleen<br />
+<a href="http://www.miodestino.co.uk" rel="nofollow">www.miodestino.co.uk</a></p>
+	
+			<p class="cmttime">01 Oct 2008 at 3:20 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2545">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2545" title="">#</a> </small><cite><a href='http://hiddenpixels.com/technology-updates/javascript-web-designers/' rel='external nofollow'>Awesome Collection of JavaScript for Web Designers - Hidden Pixels</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">03 Oct 2008 at 10:40 am</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2558">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2558" title="">#</a> </small><cite><a href='http://www.primediart.com' rel='external nofollow'>quality website designing</a></cite></div>
+						<p>Awesome and handy script.. cool</p>
+	
+			<p class="cmttime">04 Oct 2008 at 7:04 am</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2660">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2660" title="">#</a> </small><cite><a href='http://www.dotpress.net/2008/10/10/lo-mejor-en-tutoriales-de-jquery/' rel='external nofollow'>Lo mejor en tutoriales de jQuery · DotPress</a></cite></div>
+						<p>[&#8230;] jQZoom [&#8230;]</p>
+	
+			<p class="cmttime">13 Oct 2008 at 4:39 pm</p>		
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2676">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2676" title="">#</a> </small><cite><a href='http://askandlearn.info/wp_cha/?p=33' rel='external nofollow'>GO Wordpress! &raquo; Blog Archive &raquo; Useful Links</a></cite></div>
+						<p>[&#8230;] JQ ZOOM [&#8230;]</p>
+	
+			<p class="cmttime">15 Oct 2008 at 1:47 pm</p>		
+		</li>
+
+	
+	
+		<li class="" id="comment-2735">
+			<div class="cmtinfo"><small class="commentmetadata"><a href="#comment-2735" title="">#</a> </small><cite><a href='http://www.searchfit.com/blog/ecommerce/ecommerce-user-interface-using-jquery-with-searchfit.htm' rel='external nofollow'>Ecommerce User Interface - Using JQuery with SearchFit - JQuery for Ecommerce</a></cite></div>
+						<p>[&#8230;] Uses JQZoom JQuery Plugin by Mind Projects: <a href="http://www.mind-projects.it/blog/jqzoom_v10" rel="nofollow">http://www.mind-projects.it/blog/jqzoom_v10</a> [&#8230;]</p>
+	
+			<p class="cmttime">20 Oct 2008 at 10:49 pm</p>		
+		</li>
+
+	
+	
+	</ol>
+
+ <div class="entry">
+<p class="posted">
+	<a href="http://www.mind-projects.it/blog/jqzoom_v10/trackback">Trackback URI</a> | 
+	<a href='http://www.mind-projects.it/blog/jqzoom_v10/feed'>Comments RSS</a></p>
+</div>
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://www.mind-projects.it/blog/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" class="textbox" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" class="textbox" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (hidden) (required)</small></label></p>
+
+<p><input type="text" class="textbox" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="14" />
+</p>
+		<script type='text/javascript'>
+			var RecaptchaOptions = { theme : 'red', tabindex : 5 };
+		</script><script type="text/javascript" src="jqzoom_v10_files/challenge"></script>
+
+	<noscript>
+  		<iframe src="http://api.recaptcha.net/noscript?k=6LfSywAAAAAAAEnO4NJMCT5RZ3Aku5e6HMIFIV1q" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>		<div id="recaptcha-submit-btn-area"></div> 
+		<script type='text/javascript'>
+			var sub = document.getElementById('submit');
+			sub.parentNode.removeChild(sub);
+			document.getElementById('recaptcha-submit-btn-area').appendChild (sub);
+			document.getElementById('submit').tabIndex = 6;
+			if ( typeof _recaptcha_wordpress_savedcomment != 'undefined') {
+				document.getElementById('comment').value = _recaptcha_wordpress_savedcomment;
+			}
+		</script>
+		<noscript>
+		 <style type='text/css'>#submit {display:none;}</style>
+		 <input name="submit" type="submit" id="submit-alt" tabindex="6" value="Submit Comment"/> 
+		</noscript>
+</form>
+
+					</div>	
+    
+            	
+			    <p align="center"></p>
+	</div>
+	<!-- end #content -->
+
+	<div id="sidebar">
+	<ul>
+<!-- php if(is_home()) {--> 
+<li>
+	<h2>About</h2>
+	<p>
+        Marco Renzi,<br>
+        26 years old,Italian Engineer ....
+	This is my blog,Surf,Web Developing and....more...     
+        <a style="background-image:none;text-decoration:none;border:0px;" href="http://www.mind-projects.it/blog/?page_id=6"><image style="border:0px;" src="jqzoom_v10_files/hireme2.gif"></a>
+	</p>	
+</li>
+<li>
+<h2>Paypal Donation</h2>
+<form action="https://www.paypal.com/cgi-bin/webscr" target="paypal" method="post"><input type="hidden" name="cmd" value="_xclick" /><input type="hidden" name="business" value="renzi.mrc@gmail.com" /><input type="hidden" name="item_name" value="Donation Support for jQzoom Plugin at www.mind-projects.it" /><input type="hidden" name="no_shipping" value="1" /><input type="hidden" name="return" value="http://www.mind-projects.it/blog/jqzoom_v10" /><input type="hidden" name="cancel_return" value="http://www.mind-projects.it/blog/jqzoom_v10" /><input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="on0" value="Website"/>
+Amount: 
+<select id="amount" name="amount" class="">
+<option value="1.00">1.00</option>
+<option value="2.00" selected="selected">2.00</option>
+<option value="5.00">5.00</option>
+<option value="10.00">10.00</option>
+<option value="25.00">25.00</option>
+<option value="50.00">50.00</option>
+<option value="100.00">100.00</option></select>&nbsp;EUR
+<br />
+Website(Optional): <br /><input type="text" size="16" title="Your website (will be displayed)" name="os0" value="" /><br /><input class="ppimg" type="image" src="jqzoom_v10_files/x-click-butcc-donate.gif" name="submit" style="none;" alt="Make payments with PayPal - fast, free and secure" />
+<input type="hidden" name="tax" value="0" />
+<input type="hidden" name="bn" value="PP-DonationsBF" />
+</form></li>
+<li>
+    <h2>Feed on</h2>
+    <ul>
+<!--http://www.mind-projects.it/blog/feed-->
+      <li class="feed"><a title="RSS Feed of Posts" href="http://feeds.feedburner.com/mind-projects">Posts RSS</a></li>
+      <li class="feed"><a title="RSS Feed of Posts"  href="http://feeds.feedburner.com/mind-projects?format=xml">Feedburner RSS(xml)</a></li>
+      <li class="feed"><a title="RSS Feed of Comments" href="http://www.mind-projects.it/blog/comments/feed">Comments RSS</a></li>
+    </ul>
+  </li>
+<!--START RECENT COMMENTS-->
+   <li><h2>Recent Comments:</h2>
+        <ul>
+        	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2558" title="jQZoom_v2.2(updated), December 14, 2007">quality website designing</a>: Awesome and handy script.. cool</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2534" title="jQZoom_v2.2(updated), December 14, 2007">Colleen</a>: Hello, We would like to use this zoom application, however, we are wondering about the affect of download...</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2496" title="jQZoom_v2.2(updated), December 14, 2007">maynet</a>: this is supper..!!!!!!!!! thnks admin =)</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2374" title="jQZoom_v2.2(updated), December 14, 2007">8deg</a>: It’s really good tool!</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2345" title="jQZoom_v2.2(updated), December 14, 2007">Milo</a>: Hi, I&#8217;m trying to make my site w3c comlpliant however when I use the w3c validator it doesnt accept the...</li>
+        </ul>
+   </li>
+      
+
+      <li><h2>Recent Trackbacks:</h2>
+        <ul>
+        	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2735" title="Trackback to &quot;jQZoom_v2.2(updated)&quot;: Uses JQZoom JQuery Plugin by Mind Projects:...">Using JQuery with SearchFit - JQuery for Ecommerce</a>: Ecommerce User Interface</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2676" title="Trackback to &quot;jQZoom_v2.2(updated)&quot;: JQ ZOOM">GO Wordpress!</a>: Useful Links</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2660" title="Trackback to &quot;jQZoom_v2.2(updated)&quot;: jQZoom">Lo mejor en tutoriales de jQuery · DotPress</a>: jQZoom</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2545" title="Trackback to &quot;jQZoom_v2.2(updated)&quot;: jQZoom">Hidden Pixels</a>: Awesome Collection of JavaScript for Web Designers</li>
+	<li><a href="http://www.mind-projects.it/blog/jqzoom_v10#comment-2501" title="Trackback to &quot;jQZoom_v2.2(updated)&quot;: jQZoom">0 n 8 = ?</a>: 50 Jquery Örneği -1</li>
+        </ul>
+   </li>
+   
+
+
+<!--end RECENT COMMENTS--> 
+<!--php }-->
+<li>
+  <h2>Search</h2>
+	<form id="searchform" method="get" action="http://www.mind-projects.it/blog/">
+		<input type="text" name="s" id="s" class="textbox" value="" />
+		<input id="btnSearch" type="submit" name="submit" value="Go" />
+	</form>
+  </li>  
+        
+  <li>
+    <h2>
+      Categories    </h2>
+    <ul>
+      	<li class="cat-item cat-item-16"><a href="http://www.mind-projects.it/blog/archives/category/initial_post" title="View all posts filed under Initial_post">Initial_post</a> (1)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.mind-projects.it/blog/archives/category/jquery" title="View all posts filed under jQuery">jQuery</a> (3)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.mind-projects.it/blog/archives/category/jquery_plugins" title="View all posts filed under jQuery_plugins">jQuery_plugins</a> (2)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.mind-projects.it/blog/archives/category/jqzoom" title="View all posts filed under jqzoom">jqzoom</a> (3)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.mind-projects.it/blog/archives/category/me" title="View all posts filed under Me">Me</a> (3)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.mind-projects.it/blog/archives/category/script" title="View all posts filed under script">script</a> (1)
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.mind-projects.it/blog/archives/category/seo" title="View all posts filed under seo">seo</a> (1)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.mind-projects.it/blog/archives/category/surprise" title="View all posts filed under surprise">surprise</a> (1)
+</li>
+    </ul>
+  </li>
+  <li>
+    <h2>
+      Monthly    </h2>
+    <ul>
+      	<li><a href='http://www.mind-projects.it/blog/archives/date/2008/03' title='March 2008'>March 2008</a>&nbsp;(1)</li>
+	<li><a href='http://www.mind-projects.it/blog/archives/date/2008/02' title='February 2008'>February 2008</a>&nbsp;(1)</li>
+	<li><a href='http://www.mind-projects.it/blog/archives/date/2007/12' title='December 2007'>December 2007</a>&nbsp;(4)</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Pages</h2>
+    <ul>
+      <li class="page_item page-item-6"><a href="http://www.mind-projects.it/blog/contact-me" title="Contact me">Contact me</a></li>
+<li class="page_item page-item-14 current_page_item "><a href="http://www.mind-projects.it/blog/jqzoom_v10" title="jQZoom_v2.2(updated)">jQZoom_v2.2(updated)</a></li>
+<li class="page_item page-item-20"><a href="http://www.mind-projects.it/blog/gallery" title="My Photos">My Photos</a></li>
+    </ul>
+  </li>
+   
+
+
+    </ul>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<div class="wrapper">
+		<p class="links">
+      <a href="http://www.freecsstemplates.org/" title="Free CSS Templates" target="_blank">Design</a> &#183; <a href="http://wpthemeland.com/themes/organic/" title="Organic" target="_blank">WordPress Theme</a> &#183; <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Strict"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> &#183; <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>
+		<p class="legal">&copy; 2008 </p>
+	</div>
+</div>
+<!-- http://www.noupe.com/jquery/50-amazing-jquery-examples-part1.html --></body>
+</html>
